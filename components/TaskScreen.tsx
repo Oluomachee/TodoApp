@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { Task } from '@prisma/client'
-import { createTask, deleteTask, getTasks, logout, updateTask } from '@/src/actions/actions'
+import { createTask, deleteTask,logout, updateTask } from '@/src/actions/actions'
 import { useRouter } from 'next/navigation'
 import { Checkbox } from './ui/checkbox'
 import { MdDelete } from "react-icons/md";
