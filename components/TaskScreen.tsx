@@ -45,7 +45,7 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
   }
   return (
 
-    <div className='flex flex-col justify-center items-center w-full gap-8'>
+    <div className='flex flex-col justify-center items-center w-full gap-32'>
       <div className='bg-black w-full h-36 pt-8 justify-content-center items-center flex flex-col gap-8'>
         <Image className='w-24 ' src="/logo.png" width={50} height={50} alt="logo image" />
 
