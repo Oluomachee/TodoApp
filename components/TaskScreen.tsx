@@ -73,7 +73,7 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
 
             </div>
-          )) : <div className='text-[#8284FA]'>No tasks</div>}
+          )) : <div className='text-[#8284FA]'>No tasks in the Incomplete List</div>}
 
         </div>
         <div>
@@ -85,7 +85,7 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
 
             </div>
-          )) : <div className='text-[#8284FA]'>No tasks</div>}
+          )) : <div className='text-[#8284FA]'>No tasks in the Complete List</div>}
 
         </div>
        
