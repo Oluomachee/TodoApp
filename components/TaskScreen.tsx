@@ -74,7 +74,7 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
             </div>
           )) : <div className='items-center flex flex-col'><Image className='w-24 ' src="/File.png" width={50} height={50} alt="logo image" />
-            <p className='text-[#8284FA]'>You don't have any tasks yet.<br/>Create tasks and organize your to-do items.</p></div>}
+            <p className='text-[#8284FA]'>You don&apos;t have any tasks yet.<br/>Create tasks and organize your to-do items.</p></div>}
 
         </div>
         <div>
