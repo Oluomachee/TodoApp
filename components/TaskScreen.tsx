@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { Task } from '@prisma/client'
-import { createTask, deleteTask,logout, updateTask } from '@/src/actions/actions'
+import { createTask, deleteTask, logout, updateTask } from '@/src/actions/actions'
 import { useRouter } from 'next/navigation'
 import { Checkbox } from './ui/checkbox'
 import { MdDelete } from "react-icons/md";
@@ -73,7 +73,8 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
 
             </div>
-          )) : <div className='text-[#8284FA]'>No Incomplete Task yet</div>}
+          )) : <div className='items-center flex flex-col'><Image className='w-24 ' src="/File.png" width={50} height={50} alt="logo image" />
+            <p className='text-[#8284FA]'>You don't have any tasks yet.<br/>Create tasks and organize your to-do items.</p></div>}
 
         </div>
         <div>
@@ -85,12 +86,12 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
 
             </div>
-          )) : <div className='text-[#8284FA]'>No Completed Task yet</div>}
+          )) : <div className='text-[#8284FA]'></div>}
 
         </div>
-       
+
       </div>
-       <div className='flex place-items-center w-full justify-center'>
+      <div className='flex place-items-center w-full justify-center'>
         <Button className='text-[#8284FA]' onClick={async () => await logout()} >SignOut</Button>
       </div>
 
