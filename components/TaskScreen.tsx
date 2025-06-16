@@ -47,7 +47,7 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
     <div className='flex flex-col justify-center items-center w-full gap-32'>
       <div className='bg-black w-full h-36 pt-8 justify-content-center items-center flex flex-col gap-8'>
-        <Image className='w-24 ' src="/logo.png" width={50} height={50} alt="logo image" />
+        <Image className='w-24 ' src="/Logo.png" width={50} height={50} alt="logo image" />
 
         {/* <h1 className='text-blue-600 text-4xl font-bold bg-[#0D0D0D] '>TODO APP</h1> */}
         <div className='flex  w-xl p-1 gap-2 rounded-md items-center bg-grey'>
@@ -73,7 +73,7 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
 
             </div>
-          )) : <div className='text-[#8284FA]'>No tasks in the Incomplete List</div>}
+          )) : <div className='text-[#8284FA]'>No Incomplete Task yet</div>}
 
         </div>
         <div>
@@ -85,7 +85,7 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
 
 
             </div>
-          )) : <div className='text-[#8284FA]'>No tasks in the Complete List</div>}
+          )) : <div className='text-[#8284FA]'>No Completed Task yet</div>}
 
         </div>
        
