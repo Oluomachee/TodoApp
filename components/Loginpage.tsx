@@ -68,7 +68,7 @@ const loading =  form. formState.isSubmitting;
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="w-sm ">
+              <FormItem className="w-xs ">
                 <div className="place-items-center">
                   <Avatar className='h-36 w-36 '>
                   <AvatarImage className="image-center" src="https://github.com/shadcn.png" />
@@ -91,7 +91,7 @@ const loading =  form. formState.isSubmitting;
             control={form.control}
             name="password"
             render={({ field }) => (
-              <FormItem className="w-sm">
+              <FormItem className="w-xs">
                 <FormLabel className="text-white" >Password</FormLabel>
                 <FormControl>
                   <Input className="text-black bg-white" type="password" placeholder="Input password here" {...field} />
