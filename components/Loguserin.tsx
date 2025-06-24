@@ -100,7 +100,7 @@ export function Loguserin() {
                     <Button type="submit" disabled={loading}>
                         {loading?<Loader2 className='animate-spin'/>:"Submit"}
                         </Button>
-                    <p className="text-white" >Dont have an account yet? <Link href={"/signup"}> Signup here </Link></p>
+                    <p className="text-white" >Don&apos;t have an account yet? <Link href={"/signup"}> Signup here </Link></p>
 
 
                 </form>
