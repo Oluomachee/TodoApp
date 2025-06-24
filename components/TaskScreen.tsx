@@ -50,13 +50,13 @@ const TaskScreen = ({ completeList, inCompleteList }: { completeList: Task[], in
         <Image className='w-24 ' src="/Logo.png" width={50} height={50} alt="logo image" />
 
         {/* <h1 className='text-blue-600 text-4xl font-bold bg-[#0D0D0D] '>TODO APP</h1> */}
-        <div className='flex  w-xl p-1 gap-2 rounded-md items-center bg-grey'>
+        <div className='flex w-sm md:w-xl p-1 gap-2 rounded-md items-center bg-grey'>
 
           <Input onChange={(e) => { settask(e.target.value) }} value={task} type='text' placeholder='Add Task' className='border-none text-white focus-visible:ring-0 bg-[#262626] h-12 ' />
-          <Button onClick={() => { handlesubmit() }} className='max-w-md bg-[#1E6F9F] h-12 cursor-pointer'>Add</Button>
+          <Button onClick={() => { handlesubmit() }} className='max-w-md max-w-sm bg-[#1E6F9F] h-12 cursor-pointer'>Add</Button>
         </div>
       </div>
-      <div className='gap-8 w-xl ' >
+      <div className='gap-8  w-sm md:w-xl ' >
         <div>
           <div className='flex w-full justify-between pb-2'>
             <p className='text-[#8284FA]'>Total Tasks ({completeList.length + inCompleteList.length})</p>
