@@ -10,9 +10,8 @@ import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import {  loginuser} from '@/src/actions/actions'
 import Link from 'next/link'
-import { Avatar, AvatarFallback } from './ui/avatar'
-import { AvatarImage } from './ui/avatar'
 import { Loader2 } from 'lucide-react'
+import Image from 'next/image'
 export function Loguserin() {
     
    
@@ -63,10 +62,7 @@ export function Loguserin() {
                         render={({ field }) => (
                             <FormItem className="w-xs ">
                                 <div className='place-items-center'>
-                                    <Avatar className='h-36 w-36 '>
-                                        <AvatarImage className='image-center' src="https://github.com/shadcn.png" />
-                                        <AvatarFallback>CN</AvatarFallback>
-                                    </Avatar>
+                                   <Image className='w-36 ' src="/Avatar.png" width={200} height={200} alt="logo image" />
                                 </div>
                                 <FormDescription className='text-white text-3xl text-center font-bold'>
                                     Login
@@ -97,9 +93,11 @@ export function Loguserin() {
                             </FormItem>
                         )}
                     />
-                    <Button type="submit" disabled={loading}>
+                   <div className='place-items-center' >
+                     <Button type="submit" disabled={loading}>
                         {loading?<Loader2 className='animate-spin'/>:"Submit"}
                         </Button>
+                   </div>
                     <p className="text-white" >Don&apos;t have an account yet? <Link href={"/signup"}> Signup here </Link></p>
 
 

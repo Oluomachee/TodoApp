@@ -18,9 +18,8 @@ import { signupuser } from "@/src/actions/actions"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 import Link from "next/link"
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { Loader2 } from "lucide-react"
-
+import Image from 'next/image'
 
 
 
@@ -70,10 +69,8 @@ const loading =  form. formState.isSubmitting;
             render={({ field }) => (
               <FormItem className="w-xs ">
                 <div className="place-items-center">
-                  <Avatar className='h-36 w-36 '>
-                  <AvatarImage className="image-center" src="https://github.com/shadcn.png" />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
+                  <Image className='w-36 ' src="/Avatar.png" width={200} height={200} alt="logo image" />
+                  
                 </div>
                 <FormDescription className='text-white text-3xl text-center font-bold'>
                   Signup
@@ -103,9 +100,12 @@ const loading =  form. formState.isSubmitting;
               </FormItem>
             )}
           />
-          <Button type="submit" disabled={loading}>
+          <div className="place-items-center" >
+            <Button type="submit" disabled={loading}>
             {loading?<Loader2 className="animate-spin"/>:"Submit"}
           </Button>
+          </div>
+          
           <p className="text-white" >Have an account already? <Link href={"/login"}> login here </Link></p>
         </form>
       </Form>
