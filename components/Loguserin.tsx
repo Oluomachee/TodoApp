@@ -60,8 +60,8 @@ export function Loguserin() {
 
                         name="email"
                         render={({ field }) => (
-                            <FormItem className="w-xs ">
-                                <div className='place-items-center'>
+                            <FormItem className="w-xs sm:place-items-center ">
+                                <div className='sm:place-items-center'>
                                    <Image className='w-36 ' src="/Avatar.png" width={200} height={200} alt="logo image" />
                                 </div>
                                 <FormDescription className='text-white text-3xl text-center font-bold'>
@@ -81,7 +81,7 @@ export function Loguserin() {
                         control={form.control}
                         name="password"
                         render={({ field }) => (
-                            <FormItem className="w-xs">
+                            <FormItem className="w-xs sm:place-items-center">
                                 <FormLabel className="text-white" >Password</FormLabel>
                                 <FormControl>
                                     <Input className="text-black bg-white" type="password" placeholder="Input password here" {...field} />
@@ -93,7 +93,7 @@ export function Loguserin() {
                             </FormItem>
                         )}
                     />
-                   <div className='place-items-center' >
+                   <div className='sm:place-items-center' >
                      <Button type="submit" disabled={loading}>
                         {loading?<Loader2 className='animate-spin'/>:"Submit"}
                         </Button>
