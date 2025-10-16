@@ -62,7 +62,7 @@ const loading =  form. formState.isSubmitting;
     <div className='min-h-screen bg-cover bg-center bg-no-repeat'
       style={{ backgroundImage: "url('/Background1.jpg')" }}>
       <Form {...form} >
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 place-items-center pt-20">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 sm:place-items-center place-items-center pt-20">
           <FormField
             control={form.control}
             name="email"
